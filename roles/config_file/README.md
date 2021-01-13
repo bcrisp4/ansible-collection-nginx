@@ -61,7 +61,7 @@ Manage Nginx configuration files
         name: bcrisp4.nginx.config_file
 
 ```
-would create `/etc/nginx/conf` like:
+would create `/etc/nginx/nginx.conf` like:
 ```
 user www-data;
 worker_processes auto;
