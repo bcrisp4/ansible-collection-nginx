@@ -1,0 +1,17 @@
+namespace: bcrisp4
+name: nginx
+version: 0.0.1
+readme: README.md
+authors:
+  - Ben Crisp <ben@thecrisp.io>
+description: A collection of roles for managing Nginx.
+license:
+- MIT
+license_file: LICENSE.txt
+tags: ['nginx']
+dependencies: {}
+repository: https://github.com/bcrisp4/ansible-collection-nginx
+documentation: https://github.com/bcrisp4/ansible-collection-nginx
+homepage: https://github.com/bcrisp4/ansible-collection-nginx
+issues: https://github.com/bcrisp4/ansible-collection-nginx/issues
+build_ignore: []

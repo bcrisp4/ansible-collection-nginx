@@ -1,0 +1,10 @@
+---
+- name: ensure that the apt cache has been updated on debian hosts
+  ansible.builtin.apt:
+    update_cache: true
+  when: ansible_os_family == 'Debian'
+
+- name: ensure that nginx is installed
+  ansible.builtin.package:
+    name: "{{ nginx_package_name }}{{ '={}'.format(nginx_package_version) }}"
+    state: present

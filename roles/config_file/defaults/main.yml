@@ -1,0 +1,6 @@
+---
+nginx_config_file_path: /etc/nginx/nginx.conf
+nginx_config_file_owner: root
+nginx_config_file_group: root
+nginx_config_file_mode: ugo=r
+nginx_config_file_config: {}

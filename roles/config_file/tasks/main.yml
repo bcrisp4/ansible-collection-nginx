@@ -1,0 +1,10 @@
+---
+- name: ensure that the nginx configuration file is in the correct state
+  ansible.builtin.template:
+    src: nginx.conf.jinja2
+    dest: "{{ nginx_config_file_path }}"
+    owner: "{{ nginx_config_file_owner }}"
+    group: "{{ nginx_config_file_group }}"
+    mode: "{{ nginx_config_file_mode }}"
+  notify: "{{ nginx_config_file_handlers|default(omit) }}"
+  when: nginx_config_file_config != {}
